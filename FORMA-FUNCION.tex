@@ -1,0 +1,349 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[Presentación]{\bf\Huge LA FORMA Y LA FUNCIÓN}
+\subtitle{Experiencia en Portales Web}
+
+\author[Grupo-B-04]
+{
+\inst{1}%
+	Raith Josemar Medina Villegas\\ 
+\inst{2}%
+	Yeltsin Sánchez Feria\\
+\inst{3}%
+	José Gabriel Hanampa Sucapuca
+}
+\institute[UNSA]
+{
+\inst{1}% 
+System Engineering School\\
+System Engineering and Informatic Department\\
+Production and Services Faculty\\
+San Agustin National University of Arequipa\\
+}
+
+\date[2020-09-30]{\scriptsize{2020-10-06}}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents
+\end{frame}
+%__________________________Introduccion___________________________
+\section{Introduccion (Walter Gropius)}
+\begin{frame}
+\frametitle{Introduccion - Walter Gropius}
+\begin{itemize}
+\item Fue un arquitecto alemán, fundador y primer director de la Bauhaus.
+\end{itemize}
+\begin{figure}
+     \centering
+     \includegraphics[width=.9\textwidth]{Walter.PNG}
+     \caption{Walter Gropius}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%_________________________________________________________________
+%_________________________Accesibilidad___________________________
+\section{Accesibilidad}
+\begin{frame}{Accesibilidad - Información Oculta By Design}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad1.PNG}
+     \caption{}
+     \label{fig:my_label}
+\end{figure}
+\end{frame}
+
+%*******************************************************
+\begin{frame}
+\frametitle{Accesibilidad - Popups Escudos de Información}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad2.PNG}
+     \caption{}
+     \label{fig:my_label}
+\end{figure}
+\end{frame}
+%*******************************************************
+\begin{frame}
+\frametitle{Accesibilidad - Navegación Oculta}
+ \begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad3.PNG}
+     \caption{}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%*******************************************************
+\begin{frame}
+\frametitle{Accesibilidad - Heros Rotativos ¿Para Qué?}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad4.PNG}
+     \caption{}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%*******************************************************
+\begin{frame}
+\frametitle{Accesibilidad - Falta de Contraste}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad5.PNG}
+     \caption{}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%*******************************************************
+\begin{frame}
+\frametitle{Accesibilidad - Falta de Propósito}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{accesibilidad6.PNG}
+     \caption{}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%_____________________________________________________________
+
+
+
+
+%-----------------------Navegacion-------------------------
+%\diapositiva 1
+\section{Navegacion}
+\begin{frame}
+\frametitle{Navegacion}
+\begin{itemize}
+\item Tiempo que le toma al {\bf usuario} en llegar a la {\bf informacion}.
+\end{itemize}
+\begin{itemize}
+\item Sobrecarga de menus.
+\end{itemize}
+\begin{itemize}
+\item {\bf Amplitud} > {\bf Profundidad}.
+\end{itemize}
+\begin{itemize}
+\item Menu hamburguesa.
+\end{itemize}
+\begin{itemize}
+\item Menus progresivos colapsados.
+\end{itemize}
+\begin{itemize}
+\item Posicionamiento.
+\end{itemize}
+\end{frame}
+
+%\diapositiva 2
+\begin{frame}
+\frametitle{Navegacion}
+\begin{itemize}
+\item Sobrecarga de menus.
+\end{itemize}
+{\includegraphics[width=11.0cm]{1.jpg}}
+\end{frame}
+
+%\diapositiva 3
+\begin{frame}
+\frametitle{Navegacion}
+\begin{itemize}
+\item {\bf Amplitud:} Cantidad de informacion mostrada en una accion.
+\end{itemize}
+\begin{itemize}
+\item {\bf Profundidad:} Tiempo que le toma al usuario en llegar a la informacion.
+\end{itemize}
+\begin{itemize}
+\item {\bf Amplitud > Profundidad}.
+\end{itemize}
+\end{frame}
+
+%\diapositiva 4
+\begin{frame}
+\frametitle{Navegacion}
+\begin{itemize}
+\item Mega Menus.
+\end{itemize}
+{\includegraphics[width=11.0cm]{2.jpg}}
+\end{frame}
+
+%\diapositiva 5
+\begin{frame}
+\frametitle{Navegacion}
+\begin{itemize}
+\item Menu hamburguesa.
+\end{itemize}
+{\includegraphics[width=11.0cm]{3.png}}
+\end{frame}
+
+%\diapositiva 6
+\section{Contenidos}
+\begin{frame}
+\frametitle{Contenidos}
+\begin{itemize}
+\item El espacio en blanco.
+\end{itemize}
+\begin{itemize}
+\item Above the fold.
+\end{itemize}
+\begin{itemize}
+\item Espacio en blanco macro.
+\end{itemize}
+\begin{itemize}
+\item Espacio en blanco micro.
+\end{itemize}
+\end{frame}
+
+%\diapositiva 7
+\begin{frame}
+\frametitle{Contenidos}
+\begin{itemize}
+\item Above the fold.
+\end{itemize}
+{\includegraphics[width=6.5cm]{4.jpg}}
+\end{frame}
+
+%\diapositiva 8
+\begin{frame}
+\frametitle{Contenidos}
+\begin{itemize}
+\item El arte del espacio en blanco.
+\end{itemize}
+{\includegraphics[width=12.0cm]{5.png}}
+\end{frame}
+
+%\diapositiva 9 comptyilaloahora ya sta
+\begin{frame}
+\frametitle{Contenidos}
+\begin{itemize}
+\item El espacio en blanco micro.
+\end{itemize}
+{\includegraphics[width=13.0cm]{6.jpeg}}
+\end{frame}
+
+
+%-------------------------Textos---------------------------
+\section{Textos}
+\begin{frame}
+\frametitle{Textos - El diseño es la tipografía}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img2.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+
+%***********************************************************
+\begin{frame}
+\frametitle{Textos - Jerarquías}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img3.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%***********************************************************
+\begin{frame}
+\frametitle{Textos - Alineación}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img4.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%***********************************************************
+\begin{frame}
+\frametitle{Textos - Alineación }
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img5.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%***********************************************************
+\begin{frame}
+\frametitle{Textos - Ancho de Linea Ideal}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img6.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%***********************************************************
+\begin{frame}
+\frametitle{Textos - MAYUSCULAS y minisculas}
+\begin{figure}
+     \centering
+     \includegraphics[width=1\textwidth]{Texto_img7.png}
+     \label{fig:my_label}
+ \end{figure}
+\end{frame}
+%------------------------------------------------------------------
+
+
+
+%--------------------Conclusiones----------------------------------
+\section{Conclusiones}
+\begin{frame}
+\frametitle{Conclusiones}
+\begin{itemize}
+\item Lo importante al momento de desarrollar una página Web, es tener en cuenta siempre la función de los objetivos, no cargar demás nuestra página.
+\item Podemos perder la atención de nuestro usuario si usamos muchos distractores. ( Imágenes sin función).
+\item Los textos deben mantener las reglas que desde pequeños conocemos, puesto que nuestro cerebro esta acostumbrado a eso.
+\end{itemize}
+\end{frame}
+%------------------------------------------------------------------
+
+\end{document}
